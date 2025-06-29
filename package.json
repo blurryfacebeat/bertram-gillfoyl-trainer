@@ -9,7 +9,9 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint . --ext .ts,.js,.vue,.mjs",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "test": "vitest --config vitest.config.ts",
+    "test:ui": "vitest --ui --config vitest.config.ts"
   },
   "dependencies": {
     "@nuxt/eslint": "^1.4.1",
@@ -17,6 +19,7 @@
     "@nuxt/icon": "^1.14.0",
     "@nuxt/image": "^1.10.0",
     "@nuxtjs/i18n": "^9.5.6",
+    "@vueuse/core": "^13.4.0",
     "eslint": "^9.29.0",
     "msw": "^2.10.2",
     "nuxt": "^3.17.5",
@@ -24,10 +27,17 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
+    "@nuxt/test-utils": "^3.19.1",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/vue": "^8.1.0",
+    "@types/jest": "^30.0.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-prettier": "^5.5.1",
+    "happy-dom": "^17.6.3",
+    "jsdom": "^26.1.0",
     "prettier": "^3.6.2",
-    "sass-embedded": "^1.89.2"
+    "sass-embedded": "^1.89.2",
+    "vitest": "^3.2.4"
   },
   "msw": {
     "workerDirectory": [

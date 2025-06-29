@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h2>Dashboard</h2>
+    <p>Loading app...</p>
   </div>
 </template>
 
 <script setup lang="ts">
-definePageMeta({ layout: 'app' });
+definePageMeta({ layout: 'app-layout' });
 </script>
