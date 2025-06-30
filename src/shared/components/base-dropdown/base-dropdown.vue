@@ -42,7 +42,7 @@ onClickOutside(dropdownRef, () => {
   isOpen.value = false;
 });
 
-const idBase = crypto.randomUUID();
+const idBase = useId();
 const dropdownId = `dropdown-${idBase}`;
 const buttonId = `dropdown-button-${idBase}`;
 </script>

@@ -26,8 +26,8 @@ const changeLang = () => (locale.value = lang.value);
 </script>
 
 <style scoped lang="scss">
-@use '@/shared/styles/variables.scss' as *;
 @use '@/shared/styles/mixins.scss' as *;
+@use '@/shared/styles/breakpoints.scss' as *;
 
 .app-header {
   display: flex;

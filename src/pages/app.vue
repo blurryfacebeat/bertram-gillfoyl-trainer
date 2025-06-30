@@ -1,9 +1,21 @@
 <template>
   <div>
-    <p>Loading app...</p>
+    <p>Добро пожаловать, {{ user?.name }}!</p>
+    <button @click="onLogout">Выйти</button>
   </div>
 </template>
 
 <script setup lang="ts">
-definePageMeta({ layout: 'app-layout' });
+import { useAuthService } from '~/api/services/auth.service';
+
+const { user, fetchUser, logout } = useAuthService();
+
+if (!user.value) {
+  await fetchUser();
+}
+
+const onLogout = () => {
+  logout();
+  navigateTo('/login');
+};
 </script>

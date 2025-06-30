@@ -6,6 +6,7 @@ export default defineNuxtPlugin(async () => {
       serviceWorker: {
         url: '/mockServiceWorker.js',
       },
+      onUnhandledRequest: 'bypass',
     });
   }
 });
