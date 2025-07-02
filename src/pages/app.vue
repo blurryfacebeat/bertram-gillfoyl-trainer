@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>Добро пожаловать, {{ user?.name }}!</p>
+    <p>Добро пожаловать, {{ user?.name || 'Загрузка...' }}!</p>
     <button @click="onLogout">Выйти</button>
   </div>
 </template>

@@ -9,6 +9,5 @@
   display: grid;
   place-items: center;
   height: 100dvh;
-  padding: 2rem;
 }
 </style>

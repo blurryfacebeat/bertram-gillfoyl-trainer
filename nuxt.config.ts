@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxt/test-utils/module',
   ],
+  plugins: ['~/plugins/msw.client', '~/plugins/init-auth'],
   i18n: {
     vueI18n: '../i18n.config.ts',
   },

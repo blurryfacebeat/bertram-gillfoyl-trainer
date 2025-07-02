@@ -12,7 +12,7 @@ export const useAuthService = () => {
   };
 
   const fetchUser = async () => {
-    if (!tokenCookie.value) return;
+    if (!tokenCookie.value || import.meta.server) return;
     try {
       const me = await fetchMe(tokenCookie.value);
       user.value = me;
