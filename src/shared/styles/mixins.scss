@@ -11,3 +11,29 @@
     @content;
   }
 }
+
+@mixin default-transition() {
+  transition: all 0.2s ease;
+}
+
+// Apply transition for only picked props
+// @include transition-only(color, background-color, transform);
+@mixin transition-only($properties...) {
+  transition: #{join($properties, ', ')} 0.2s ease;
+}
+
+// Apply transition for all exclude picked props
+// @include transition-except(transform, box-shadow);
+@mixin transition-except($excluded...) {
+  $all-props: (color, background-color, border, box-shadow, transform, opacity, top, left, right, bottom, font-size, line-height, padding, margin);
+  $filtered: ();
+
+  @each $prop in $all-props {
+    @if not index($excluded, $prop) {
+      $filtered: append($filtered, $prop, comma);
+    }
+  }
+
+  transition: #{join($filtered, ', ')} 0.2s ease;
+}
+

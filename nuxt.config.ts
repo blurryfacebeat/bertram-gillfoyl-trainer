@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxtjs/i18n',
     '@nuxt/test-utils/module',
+    '@nuxtjs/google-fonts',
   ],
   plugins: ['~/plugins/msw.client', '~/plugins/init-auth'],
   i18n: {
@@ -21,6 +22,13 @@ export default defineNuxtConfig({
         lang: 'en',
       },
     },
+  },
+  googleFonts: {
+    families: {
+      Roboto: [100, 300, 400, 500, 700, 900],
+      'Open+Sans': true,
+    },
+    display: 'swap',
   },
   experimental: {
     componentIslands: true,

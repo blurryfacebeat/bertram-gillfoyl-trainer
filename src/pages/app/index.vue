@@ -1,12 +1,13 @@
 <template>
   <div>
     <p>Добро пожаловать, {{ user?.name || 'Загрузка...' }}!</p>
-    <button @click="onLogout">Выйти</button>
+    <BaseButton is-loading is-primary @click="onLogout">Выйти</BaseButton>
   </div>
 </template>
 
 <script setup lang="ts">
 import { useAuthService } from '~/api/services/auth.service';
+import BaseButton from '~/shared/components/base-button/base-button.vue';
 
 const { user, fetchUser, logout } = useAuthService();
 
