@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/vue';
-import BaseButton from '../base-button.vue';
 import { describe, it, expect } from 'vitest';
+import BaseButton from '../base-button.vue';
 
 describe('BaseButton', () => {
   it('отображает переданный текст через слот', () => {
@@ -42,7 +42,6 @@ describe('BaseButton', () => {
       },
     });
 
-    // Предполагается, что BaseLoader имеет тестовый идентификатор или aria-label
     expect(screen.getByLabelText('base-loader')).toBeInTheDocument();
   });
 
