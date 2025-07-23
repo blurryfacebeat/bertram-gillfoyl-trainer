@@ -1,8 +1,8 @@
 <template>
   <section class="landing-content">
-    <h1 class="landing-title">{{ $t('welcome') }}</h1>
+    <h1 class="landing-title">{{ $t('landing.welcome') }}</h1>
     <BaseButton @click="navigateToApp">
-      {{ $t('startLearning') }}
+      {{ $t('landing.startLearning') }}
     </BaseButton>
   </section>
 </template>

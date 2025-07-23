@@ -4,10 +4,7 @@
       <NuxtLink to="/" class="app-header__logo" aria-label="На главную"> JS Trainer </NuxtLink>
     </div>
     <div class="app-header__right">
-      <select v-model="lang" aria-label="Выбор языка" @change="changeLang">
-        <option value="ru">Русский</option>
-        <option value="en">English</option>
-      </select>
+      <LanguagePicker />
 
       <BaseDropdown label="Профиль">
         <!-- Дропдаун содержимое -->
@@ -17,12 +14,8 @@
 </template>
 
 <script setup lang="ts">
-import { useI18n } from 'vue-i18n';
-import BaseDropdown from '@/shared/components/base-dropdown/base-dropdown.vue';
-
-const { locale } = useI18n();
-const lang = ref(locale.value);
-const changeLang = () => (locale.value = lang.value);
+import BaseDropdown from '~/shared/components/base-dropdown/base-dropdown.vue';
+import LanguagePicker from '~/features/language-picker/language-picker.vue';
 </script>
 
 <style scoped lang="scss">
@@ -38,11 +31,12 @@ const changeLang = () => (locale.value = lang.value);
   background: var(--color-bg);
   border-bottom: 1px solid var(--color-border);
 
-  @include respond-max($breakpoint-tablet) {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0.5rem;
-    padding: 0.5rem;
+  &__right {
+    display: grid;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    grid-auto-flow: column;
   }
 }
 

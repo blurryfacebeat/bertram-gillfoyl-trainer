@@ -13,13 +13,14 @@ export default defineNuxtConfig({
   ],
   plugins: ['~/plugins/msw.client', '~/plugins/init-auth'],
   i18n: {
-    vueI18n: '../i18n.config.ts',
+    vueI18n: '~/i18n/i18n.config.ts',
+    types: 'composition',
   },
   css: ['@/shared/styles/index.scss'],
   app: {
     head: {
       htmlAttrs: {
-        lang: 'en',
+        lang: 'us',
       },
     },
   },

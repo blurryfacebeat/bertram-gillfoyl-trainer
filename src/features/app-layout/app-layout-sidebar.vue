@@ -3,10 +3,10 @@
     <nav>
       <ul>
         <li>
-          <NuxtLink to="/app" aria-current="page">🏠 Главная</NuxtLink>
+          <NuxtLink to="/app" aria-current="page">🏠 {{ $t('sidebar.main') }}</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/app/editor">💻 Редактор</NuxtLink>
+          <NuxtLink to="/app/editor">💻 {{ $t('sidebar.editor') }}</NuxtLink>
         </li>
       </ul>
     </nav>

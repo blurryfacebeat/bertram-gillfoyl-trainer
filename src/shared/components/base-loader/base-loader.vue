@@ -1,5 +1,5 @@
 <template>
-  <span aria-label="base-loader" :class="classOptions" />
+  <span aria-label="base-loader" role="loader" :class="classOptions" />
 </template>
 
 <script setup lang="ts">
