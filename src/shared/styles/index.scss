@@ -8,10 +8,11 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   font-family: 'Roboto', sans-serif;
-  background: var(--color-bg);
-  color: var(--color-text);
+  background: var(--color-neutral);
+  color: var(--color-white);
 }
 
 ul,

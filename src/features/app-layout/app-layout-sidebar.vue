@@ -19,12 +19,7 @@
 
 .app-sidebar {
   width: var(--sidebar-width);
-  background: var(--color-muted);
-  border-right: 1px solid var(--color-border);
-  padding: 1rem;
-
-  @include respond-max($breakpoint-tablet) {
-    display: none;
-  }
+  background: var(--color-neutral-1);
+  padding: 48px;
 }
 </style>

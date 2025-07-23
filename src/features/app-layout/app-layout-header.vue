@@ -1,8 +1,6 @@
 <template>
   <header class="app-header" role="banner">
-    <div class="app-header__left">
-      <NuxtLink to="/" class="app-header__logo" aria-label="На главную"> JS Trainer </NuxtLink>
-    </div>
+    <div class="app-header__left" />
     <div class="app-header__right">
       <LanguagePicker />
 
@@ -28,8 +26,7 @@ import LanguagePicker from '~/features/language-picker/language-picker.vue';
   align-items: center;
   height: var(--header-height);
   padding: 0 1rem;
-  background: var(--color-bg);
-  border-bottom: 1px solid var(--color-border);
+  background: var(--color-neutral-1);
 
   &__right {
     display: grid;
@@ -38,11 +35,5 @@ import LanguagePicker from '~/features/language-picker/language-picker.vue';
     justify-content: center;
     grid-auto-flow: column;
   }
-}
-
-.app-header__logo {
-  color: var(--color-primary);
-  font-weight: 600;
-  text-decoration: none;
 }
 </style>
