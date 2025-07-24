@@ -29,6 +29,7 @@ const toggle = () => {
 };
 
 const dropdownRef = ref<HTMLElement | null>(null);
+
 onClickOutside(dropdownRef, () => {
   isOpen.value = false;
 });
