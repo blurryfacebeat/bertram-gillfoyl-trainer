@@ -4,8 +4,12 @@
     <div class="app-header__right">
       <LanguagePicker />
 
-      <BaseDropdown label="Профиль">
-        <!-- Дропдаун содержимое -->
+      <BaseDropdown>
+        <BaseButton>Профиль</BaseButton>
+
+        <template #menu>
+          <div style="background-color: #fff">Simple Menu</div>
+        </template>
       </BaseDropdown>
     </div>
   </header>
@@ -14,6 +18,7 @@
 <script setup lang="ts">
 import BaseDropdown from '~/shared/components/base-dropdown/base-dropdown.vue';
 import LanguagePicker from '~/features/language-picker/language-picker.vue';
+import BaseButton from '~/shared/components/base-button/base-button.vue';
 </script>
 
 <style scoped lang="scss">
