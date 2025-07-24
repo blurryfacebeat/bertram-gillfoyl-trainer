@@ -11,15 +11,18 @@
 </template>
 
 <script setup lang="ts">
-import type { AvailableLanguage } from '~/shared/types';
+import { useLanguage } from '~/i18n/use-language';
+import { AvailableLanguage } from '~/i18n/i18n.types';
 
 const { locale } = useI18n();
+const { setLanguage } = useLanguage();
 
-const languages: AvailableLanguage[] = ['ru', 'us'];
+const languages: AvailableLanguage[] = [AvailableLanguage.ru, AvailableLanguage.us];
 
-function handleClick(newLocale: AvailableLanguage) {
+const handleClick = (newLocale: AvailableLanguage) => {
   locale.value = newLocale;
-}
+  setLanguage(newLocale);
+};
 </script>
 
 <style scoped lang="scss">

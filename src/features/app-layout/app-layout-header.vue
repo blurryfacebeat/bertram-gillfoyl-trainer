@@ -31,7 +31,8 @@ import BaseButton from '~/shared/components/base-button/base-button.vue';
   align-items: center;
   height: var(--header-height);
   padding: 0 1rem;
-  background: var(--color-neutral-1);
+  background: var(--color-neutral);
+  border-bottom: 1px solid var(--color-divider-dark-1);
 
   &__right {
     display: grid;

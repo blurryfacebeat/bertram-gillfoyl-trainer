@@ -13,8 +13,10 @@
   --color-white: #ffffff;
   --color-black: #000000;
 
-  --color-neutral: #181818;
-  --color-neutral-1: #1a1a1a;
+  --color-divider-dark-1: rgba(84, 84, 84, .65);
+
+  --color-neutral: #2f2f2f;
+  --color-neutral-1: #242424;
   --color-neutral-2: #717680;
   --color-neutral-3: #D5D7DA;
 
@@ -31,7 +33,7 @@
   --color-feedback-3: #12B76A;
 
   --header-height: 64px;
-  --sidebar-width: 168px;
+  --sidebar-width: 84px;
 }
 
 [data-theme='dark'] {

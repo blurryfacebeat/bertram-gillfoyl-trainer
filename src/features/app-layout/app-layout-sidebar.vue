@@ -19,7 +19,9 @@
 
 .app-sidebar {
   width: var(--sidebar-width);
-  background: var(--color-neutral-1);
+  background: var(--color-neutral);
+  border-right: 1px solid var(--color-divider-dark-1);
+
   padding: 48px;
 }
 </style>

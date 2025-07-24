@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     '@nuxt/test-utils/module',
     '@nuxtjs/google-fonts',
   ],
-  plugins: ['~/plugins/msw.client', '~/plugins/init-auth'],
+  plugins: ['~/plugins/msw.client', '~/plugins/init-auth', '~/plugins/init-i18n'],
   i18n: {
     vueI18n: '~/i18n/i18n.config.ts',
     types: 'composition',
