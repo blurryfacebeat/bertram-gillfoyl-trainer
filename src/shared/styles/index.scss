@@ -10,9 +10,11 @@
 
 html,
 body {
+  font-size: 14px;
   font-family: 'Roboto', sans-serif;
-  background: var(--color-neutral);
-  color: var(--color-white);
+  color: var(--color-text-1);
+
+  background: var(--decoration-bg-3);
 }
 
 ul,

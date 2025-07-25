@@ -1,1 +1,1 @@
-export const sidebar = { main: 'Главная', editor: 'Редактор' };
+export const sidebar = { dashboard: 'Дашборд', editor: 'Редактор' };

@@ -3,10 +3,8 @@
     <div class="app-header__left" />
     <div class="app-header__right">
       <LanguagePicker />
-
       <BaseDropdown>
         <BaseButton>Профиль</BaseButton>
-
         <template #menu>
           <div style="background-color: #fff">Simple Menu</div>
         </template>
@@ -30,9 +28,10 @@ import BaseButton from '~/shared/components/base-button/base-button.vue';
   justify-content: space-between;
   align-items: center;
   height: var(--header-height);
-  padding: 0 1rem;
-  background: var(--color-neutral);
-  border-bottom: 1px solid var(--color-divider-dark-1);
+  padding: var(--space-16);
+
+  background: var(--decoration-bg-1);
+  border-bottom: 1px solid var(--color-muted-2);
 
   &__right {
     display: grid;

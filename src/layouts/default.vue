@@ -12,7 +12,7 @@
 
 <script setup lang="ts">
 import AppHeader from '~/features/app-layout/app-layout-header.vue';
-import AppSidebar from '~/features/app-layout/app-layout-sidebar.vue';
+import AppSidebar from '~/features/app-layout/app-layout-sidebar/app-layout-sidebar.vue';
 </script>
 
 <style scoped lang="scss">

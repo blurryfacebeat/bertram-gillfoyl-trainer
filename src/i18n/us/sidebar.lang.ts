@@ -1,1 +1,1 @@
-export const sidebar = { main: 'Main', editor: 'Editor' };
+export const sidebar = { dashboard: 'Dashboard', editor: 'Editor' };
